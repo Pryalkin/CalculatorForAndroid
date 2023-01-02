@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView"
+        android:background="@color/blue"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:paddingRight="20dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:paddingRight="20dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/test"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/one"
+                android:text="1"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/two"
+                android:text="2"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/three"
+                android:text="3"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/divide"
+                android:text="÷"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/left_parenthesis"
+                android:text="("
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/sin"
+                android:text="sin"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/four"
+                android:text="4"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/five"
+                android:text="5"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/six"
+                android:text="6"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/multiply"
+                android:text="x"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/right_parenthesis"
+                android:text=")"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cos"
+                android:text="cos"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/seven"
+                android:text="7"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/eight"
+                android:text="8"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/nine"
+                android:text="9"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/minus"
+                android:text="-"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/degree"
+                android:text="^"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/tg"
+                android:text="tg"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/dot"
+                android:text="."
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/zero"
+                android:text="0"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/percent"
+                android:text="%"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/plus"
+                android:text="+"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/exp"
+                android:text="E"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/log"
+                android:text="log"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/AC"
+                android:text="AC"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/delete"
+                android:text="del"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/equals"
+                android:text="="
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="5" />
+
+            <Button
+                android:id="@+id/pi"
+                android:text="PI"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/history"
+                android:text="history"
+                android:textSize="12dp"
+                android:layout_height="40dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
